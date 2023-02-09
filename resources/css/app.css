@@ -1,0 +1,90 @@
+/*
+* Fonts
+*/
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Raleway:ital,wght@0,100;0,400;0,700;1,100&display=swap");
+
+/* Tailwind */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Components */
+@layer components {
+    /* General */
+    .button {
+        @apply border-2;
+        @apply border-gray-300;
+        @apply rounded-lg;
+        @apply px-3 py-1;
+        @apply mb-3 mr-3;
+    }
+    .button:hover {
+        @apply border-teal-300;
+    }
+
+    /* WYSIWYG */
+    .wysiwyg-output h1 {
+        @apply text-2xl;
+        @apply font-bold;
+        @apply pb-4;
+    }
+    .wysiwyg-output p {
+        @apply pb-4;
+    }
+    .wysiwyg-output p {
+        @apply pb-4;
+    }
+    .wysiwyg-output ul {
+        @apply ml-6;
+        @apply list-disc;
+    }
+    .wysiwyg-output ol {
+        @apply ml-6;
+        @apply list-decimal;
+    }
+    .wysiwyg-output a {
+        @apply underline;
+        @apply text-blue-600;
+    }
+}
+
+/* General */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+textarea,
+input {
+    font-family: "DM Sans", sans-serif;
+}
+
+.raleway-font {
+    font-family: "Raleway", sans-serif;
+}
+
+.router-link-active span {
+    border-color: white;
+}
+
+.router-link-active span span {
+    background: rgb(209, 213, 219);
+}
+
+.router-link-active span img {
+    fill: #000;
+    filter: invert(0%) !important;
+    opacity: 1 !important;
+}
+
+#settingsNavIcon .router-link-active span {
+    background: #ff0000;
+    border-radius: 50px;
+}
+
+#settingsNavIcon .router-link-active img {
+    fill: #fff;
+}
